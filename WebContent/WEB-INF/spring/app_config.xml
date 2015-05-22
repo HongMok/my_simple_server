@@ -9,7 +9,7 @@
 		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
 	<bean id="casPropertyPlaceholderConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="location" value="classpath:param.properties"/>
+		<property name="location" value="classpath:datasource.properties"/>
 	</bean>
 	
 	<!-- Configures Spring MVC -->
