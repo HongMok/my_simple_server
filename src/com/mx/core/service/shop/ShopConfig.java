@@ -24,10 +24,6 @@ public class ShopConfig {
 		mapFirstType = new HashMap<Integer, List<Shop>>();
 		ShopServiceImpl shopService = (ShopServiceImpl)SpringUtil.getBean("shopservice");
 		
-//		Resource r = new FileSystemResource("../spring/app_config.xml");
-//		BeanFactory f = new XmlBeanFactory(r);
-//		ShopServiceImpl shopService = (ShopServiceImpl)f.getBean("shopService");
-		
 		listAll = shopService.getAllShop();
 		if( null != listAll && listAll.isEmpty() == false ){
 			for( Shop s : listAll ){
